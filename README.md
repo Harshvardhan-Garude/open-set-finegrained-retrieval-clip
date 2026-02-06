@@ -82,13 +82,6 @@ All experiments were run on **single-GPU / consumer hardware**, emphasizing prac
 
 ---
 
-## 📄 Report
-The full technical report with ablations, visualizations, and failure analysis is available here:
-
-📎 `Group 1 ML project final report.pdf`
-
----
-
 ## 🔮 Future Work
 - Scaling FAISS indexing to millions of images
 - CLIP distillation for edge deployment
