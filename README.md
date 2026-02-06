@@ -2,7 +2,7 @@
 
 This project explores **open-set fine-grained image retrieval**, where the system must retrieve visually similar images even when the query belongs to a **previously unseen class**.
 
-We demonstrate that **pretrained vision–language models (CLIP)** dramatically outperform supervised CNN baselines for this task, while requiring far less training compute.
+We demonstrate that **pretrained vision language models (CLIP)** dramatically outperform supervised CNN baselines for this task, while requiring far less training compute.
 
 ---
 
@@ -14,7 +14,7 @@ In real-world deployments:
 - Fine labels are incomplete or noisy
 - Systems must generalize beyond training taxonomies
 
-This project formulates retrieval as an **open-set problem** and evaluates whether vision–language pretraining can solve it effectively.
+This project formulates retrieval as an **open-set problem** and evaluates whether vision language pretraining can solve it effectively.
 
 ---
 
