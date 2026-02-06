@@ -1,0 +1,11 @@
+torch
+torchvision
+open-clip-torch
+faiss-cpu
+numpy
+pandas
+scikit-learn
+matplotlib
+Pillow
+tqdm
+pytorch-metric-learning
