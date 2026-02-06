@@ -8,11 +8,11 @@ both **image-to-image** and **text-to-image** search in a shared embedding space
 
 ## Repository structure
 
-- `clip/` — CLIP embedding extraction + retrieval + evaluation
-- `models/` — CNN baseline (EfficientNet-B0 embedding model) + training utilities
-- `evaluation/` — generic embedding evaluation (Recall@K, PCA/t-SNE, top-K visualization)
-- `data/` — dataset merge utilities and triplet dataloader helper
-- `report/` — final report PDF
+- `clip/` - CLIP embedding extraction + retrieval + evaluation
+- `models/` - CNN baseline (EfficientNet-B0 embedding model) + training utilities
+- `evaluation/` - generic embedding evaluation (Recall@K, PCA/t-SNE, top-K visualization)
+- `data/` - dataset merge utilities and triplet dataloader helper
+- `report/` - final report PDF
 
 ## Quickstart (CLIP)
 
