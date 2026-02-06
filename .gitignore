@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# OS
+.DS_Store
+
+# Outputs
+outputs/
+clip_outputs/
+evaluation_outputs/
+*.npy
+*.pth
+*.pt
+*.ckpt
+*.png
+*.jpg
+*.jpeg
