@@ -2,7 +2,32 @@
 
 This project explores **open-set fine-grained image retrieval**, where the system must retrieve visually similar images even when the query belongs to a **previously unseen class**.
 
-We demonstrate that **pretrained vision–language models (CLIP)** dramatically outperform supervised CNN baselines for this task, while requiring far less training compute.
+The project report compares **pretrained vision-language models (CLIP)** with supervised CNN baselines. Its reported results are summarized below; reproducing them requires the original dataset splits and experiment inputs.
+
+The report is co-authored by **Justin Wang, Sudip Aryal, and Harshvardhan Garude**.
+
+## Run image and text search
+
+From the repository root, create a virtual environment with `python -m venv .venv`.
+Activate it with `source .venv/bin/activate` on Linux or macOS, or
+`.\.venv\Scripts\Activate.ps1` in Windows PowerShell. Install the dependencies
+with `python -m pip install -r requirements.txt`.
+
+Point the embedding script at a local image directory with one subfolder per
+class. The script writes embeddings and image paths to `outputs/clip/` by default.
+
+```bash
+python clip/clip_extract_embeddings.py --data_dir path/to/image_dataset
+python clip/clip_text_search.py --prompt "red pickup with roof rack"
+python clip/clip_retrieval.py --query_image path/to/query.jpg
+```
+
+Keep the indexed images at their original paths so the search scripts can display
+them. The quickstart uses frozen OpenCLIP embeddings and exact PyTorch dot-product
+search. It does not load a learned projection head or build a FAISS index; those
+belong to the reported experimental design. The first model run downloads the
+OpenAI-pretrained weights unless they are already cached. The [project report](report/final_report.pdf) describes the dataset splits
+and evaluation used for the results below.
 
 ---
 
