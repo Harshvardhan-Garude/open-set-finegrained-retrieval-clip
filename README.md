@@ -2,7 +2,9 @@
 
 This project explores **open-set fine-grained image retrieval**, where the system must retrieve visually similar images even when the query belongs to a **previously unseen class**.
 
-We demonstrate that **pretrained vision–language models (CLIP)** dramatically outperform supervised CNN baselines for this task, while requiring far less training compute.
+The project report compares **pretrained vision-language models (CLIP)** with supervised CNN baselines. Its reported results are summarized below; reproducing them requires the original dataset splits and experiment inputs.
+
+The report is co-authored by **Justin Wang, Sudip Aryal, and Harshvardhan Garude**.
 
 ## Run image and text search
 
@@ -21,7 +23,10 @@ python clip/clip_retrieval.py --query_image path/to/query.jpg
 ```
 
 Keep the indexed images at their original paths so the search scripts can display
-them. The [project report](report/final_report.pdf) describes the dataset splits
+them. The quickstart uses frozen OpenCLIP embeddings and exact PyTorch dot-product
+search. It does not load a learned projection head or build a FAISS index; those
+belong to the reported experimental design. The first model run downloads the
+OpenAI-pretrained weights unless they are already cached. The [project report](report/final_report.pdf) describes the dataset splits
 and evaluation used for the results below.
 
 ---
